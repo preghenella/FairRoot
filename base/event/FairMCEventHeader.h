@@ -80,7 +80,7 @@ class FairMCEventHeader : public TNamed
     void SetRotZ(Double_t rotz) { fRotZ = rotz; }
 
     /** Reset all members **/
-    void Reset();
+    virtual void Reset();
 
     /** Register the class as data branch to the output */
     virtual void Register();
